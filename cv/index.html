@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Amanj Abdulkhaleq</title>
+    <style>
+        /* Stijlen hier */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e1e1e1;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            border-radius: 0px 0px 20px 20px;
+           
+        }
+header img{
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  
+    animation: float 1s ease-in-out alternate;
+    transform-style: preserve-3d;
+}
+img:hover{
+    width: 150px;
+    
+
+}
+@keyframes float {
+    0%{
+        transform: translateZ(0) rotateY(0);
+    }
+    50%{
+        transform: translateZ(-20px) rotateY(180deg);
+    }
+    100%{
+        transform: translateZ(0) rotateY(360deg);
+    }
+}
+        .container {
+            max-width: 800px;
+            margin: 20px 10px 20px 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0px 50px 0px 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+              
+        }
+div{
+    padding-top: 10px;
+}
+        section {
+            display: none;
+            margin-bottom: 20px;
+
+        }
+
+        .show {
+            display: block;
+           
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px 0;
+        }
+
+        button {
+          padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            margin-bottom: 5px;
+            margin-top: 5px;   
+            animation: bot 3s ease-in-out infinite alternate;
+    transform-style: preserve-3d;
+        }
+        @keyframes bot {
+    0%{
+        border: none;
+        border-radius: 0px 10px 10px 10px;
+    }
+    50%{
+        border: none;
+        border-radius: 10px 10px 10px 0px;
+    }
+    100%{
+        border: none;
+        border-radius: 0px 10px 10px 10px;
+    }
+}
+        button:hover {
+            background-color: #555;
+        }
+        .down{
+            padding: 10px 10px;
+            background-color: rgb(5, 160, 0);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            animation: floatt 3s ease-in-out infinite alternate;
+    transform-style: preserve-3d;
+        }
+        @keyframes floatt {
+    0%{
+        transform: translateY(0) ;
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0) ;
+    }
+}
+        .down:hover {
+            background-color: rgb(46, 105, 44);
+        }
+     
+
+    </style>
+</head>
+<body onload="showContactInfo()">
+ <header>
+        <h1>CV - Amanj Abdulkhaleq</h1>
+        <img src="..\cv\pic.jpg" alt="profilefoto" width="100" >
+    </header>
+    
+    <div class="container">
+        <center>
+        <section id="contact-info" class="content">
+            <h2>Contactgegevens</h2>
+            <div><strong>Adres:</strong> Grétrystraat 43, 2018 Antwerpen, België</div>
+            <div><strong>Geboortedatum:</strong> 05 januari 2001</div>
+            <div><strong>Nationaliteit:</strong> Irakees</div>
+            <div><strong>Geslacht:</strong> Mannelijk</div>
+            <div><strong>Gsm:</strong> +32470831820</div>
+            <div><strong>E-mail:</strong> amanjhemn25@gmail.com</div>
+        </section></center> 
+        <hr>
+      
+
+            <button onclick="toggleSection('profile')">Profiel</button>
+            <section id="profile" class="content">
+                <h2>Profiel</h2>
+                <p>Ik ben een gedreven en klantgerichte werknemer met 3 jaar ervaring in de klantenservice. Ik ben op zoek naar een uitdagende functie in een dynamische omgeving waar ik mijn vaardigheden en kennis kan inzetten. Mijn sterke punten zijn klantgerichtheid, flexibiliteit, verantwoordelijkheidsgevoel, snel leren, teamwork, communicatievaardigheden, probleemoplossend vermogen en stressbestendigheid. Ik ben een enthousiaste en leergierige werknemer die graag nieuwe kansen aangrijpt. Ik ben ervan overtuigd dat ik een waardevolle bijdrage kan leveren aan uw team.</p>
+            <hr></section>
+  
+        <!-- Andere secties van je CV hier -->
+    
+ 
+    <button onclick="toggleSection('work-experience')">Werkervaring</button>
+    <section id="work-experience" class="content">
+        <h2>Werkervaring</h2>
+        <ul>
+            <li><strong>Verkoper bij Lukoil</strong> - 11-2022 tot heden</li>
+            <li><strong>Winkelbediende bij Relay</strong> - 07-2023 tot heden</li>
+            <li><strong>Verpakker bij All Detection bv</strong> - 02-2022 tot 04-2022</li>
+            <li><strong>Keukenmedewerker bij Restaurant Irak</strong> - 02-2018 tot 01-2021</li>
+        </ul>
+        <hr>   </section>
+    
+<button onclick="toggleSection('education')">Studies</button>
+    <section id="education" class="content">
+        <h2>Studies</h2>
+        <div><strong>Computer Instituut voor Web Design</strong> - 4de jaar, 2016 (Buiten de EU)</div>
+        <hr>   </section>
+
+
+    <button onclick="toggleSection('courses')">Cursussen</button>
+    <section id="courses" class="content">
+        <h2>Cursussen</h2>
+        <ul>
+            <li>ICT BASIS 1,2,3 - 2023, CVO Volt, Leuven</li>
+            <li>Nederlands 2.4 B1 - 2024, CVO Volt, Leuven</li>
+            <li>AAV Informatie- en communicatietechnologie M3 - 2024, CVO Volt, Leuven</li>
+            <li>Toekan traject - CVO Volt, Leuven</li>
+        </ul>
+        <hr>  </section>
+
+
+    <button onclick="toggleSection('languages')">Talen</button>
+    <section id="languages" class="content">
+        <h2>Talen</h2>
+        <ul>
+            <li>Koerdisch: Zeer goed</li>
+            <li>Nederlands: Goed</li>
+            <li>Engels: Beperkte kennis</li>
+            <li>Arabisch: Beperkte kennis</li>
+        </ul>
+        <hr> </section>
+
+
+    <button onclick="toggleSection('skills')">Vaardigheden</button>
+    <section id="skills" class="content">
+        <h2>Vaardigheden</h2>
+        <ul>
+            <li>Nauwkeurigheid: Zorgvuldig en accuraat in taken en werkzaamheden</li>
+            <li>Klantvriendelijkheid: Uitstekende communicatieve vaardigheden en het vermogen om goed met klanten en medewerkers om te gaan</li>
+            <li>Probleemoplossend vermogen: Bekwaam in het identificeren en oplossen van problemen</li>
+            <li>Teamspeler: Goed in samenwerken en bijdragen aan een positieve teamdynamiek</li>
+            <li>Initiatiefrijk: Proactief en zelfstartend in het nemen van initiatief en het zoeken naar oplossingen</li>
+            <li>Stressbestendigheid: In staat om kalm te blijven en effectief te presteren onder druk</li>
+            <li>Betrouwbaarheid: Vertrouwd om taken nauwkeurig en tijdig uit te voeren</li>
+        </ul>
+        <hr></section>
+
+    <footer>
+        
+ <p>&copy; 2024 CV - Amanj Abdulkhaleq</p>
+    </footer><center>
+    <a href="..\cv\AmanjAbdulkhaleq.pdf" download="..\cv\AmanjAbdulkhaleq.pdf">
+        <button class="down" onclick="downloadCV()">download CV (PDF)</button></a><br><br>
+    </center>
+    <script>
+        function showContactInfo() {
+            var contactInfo = document.getElementById('contact-info');
+            contactInfo.classList.add('show');
+
+        }
+
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            var button = document.getElementById('toggle-button');
+            if (section.classList.contains('show')) {
+                section.classList.remove('show');
+               
+            } else {
+                section.classList.add('show'); 
+                
+           }
+        }
+        
+
+        function downloadCV() {
+            // Voeg hier de logica toe om het CV te downloaden
+            alert('CV wordt gedownload...');
+        }
+    </script>
+</body>
+</html>
